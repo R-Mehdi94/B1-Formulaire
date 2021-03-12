@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <?php
 
 	$lesProduits = array(
@@ -30,29 +28,44 @@
 		"argl" => "Argiles"
 	) ;
 	
-	$categorie = $_GET[ 'categorie' ] ;
+	
+	$categoriesSelectionnees = $_GET[ 'categories' ] ;
 
 ?>
 
 
-
+<!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Sanaya Bio</title>
+        <title>Exercice 5</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
 
     <body>
 		
-		<h3>Produits de catégorie <!-- à compléter - Point 4--> :</h3> 
+		<h3>Produits des catégories
+		
+			<?php
+				foreach( $categoriesSelectionnees as $uneCategorie ){
+					echo " " . $lesCategories[ $uneCategorie ] . " et " ;
+				}
+			?>
+			
+			puis c'est tout :
+		
+		</h3>
+		
+		
+		
 		
 		<ul>
 		<?php
 		
 			foreach( $lesProduits as $unProduit ){
 				
-				if( $unProduit[ 'categorie' ] == $categorie ){
+				if(  ){ // Votre code ici - Point 3
 					
+					echo "<li>" . $unProduit[ 'nom' ] . "</li>" ;
 				}
 			}
 		
