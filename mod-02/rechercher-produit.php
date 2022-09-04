@@ -11,8 +11,8 @@
 			'Aneth' => 10
 		) ;
 		
-	$nom = ucfirst( $_POST[ 'nom' ] ) ;
-	$quantite = $_POST[ 'qte' ] ;
+	$nom = ucfirst( $_GET[ 'nom' ] ) ;
+	$quantite = $_GET[ 'qte' ] ;
 
 
 ?>

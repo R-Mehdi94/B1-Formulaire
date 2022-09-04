@@ -9,11 +9,13 @@
 		<fieldset>
 			<legend>Disponibilité d'un produit</legend>
 			
-			<form>
+			<form action="rechercher-produit.php" method="GET">
 			
 				<label>Saisir le nom produit :</label>
-				<input type="text" placeholder="Nom du produit" />
+				<input type="text" name = "nom" placeholder="Nom du produit" />
 				
+				<label>Saisir la quantité du produit:</label>
+				<input type="text" name="qte" placeholder="Quantité" />
 				<br/>
 				
 				<input type="submit" value="Valider" /> 

@@ -10,7 +10,7 @@
 		
 		<?php
 			$connexionOk = FALSE ;
-			if(  ){
+			if( $GET['nomConnexion'] == "sayana" && $GET['motDePasse'] == "bio" ){
 				$connexionOk = TRUE ;
 			}
 		
